@@ -1,0 +1,21 @@
+[package]
+name = "exo-inspect"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Inspect ExodusII files (MOOSE output) from the command line without ParaView"
+license = "MIT"
+repository = "https://github.com/andrewwhitecdw/exo-inspect"
+keywords = ["exodus", "netcdf", "moose", "fem", "cli"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+thiserror = "2"
+
+[lints.rust]
+missing_docs = "warn"
+
+[lints.clippy]
+all = "warn"
